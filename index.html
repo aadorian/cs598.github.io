@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Aditya Parameswaran@CS598</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.0px; font: 12.0px Times; color: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000ee}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 13.0px; font: 11.0px 'Helvetica Neue'; color: #000000}
+    p.p4 {margin: 0.0px 0.0px 14.9px 0.0px; line-height: 22.0px; font: 18.0px Times; color: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000}
+    p.p7 {margin: 0.0px 0.0px 16.1px 0.0px; line-height: 28.0px; font: 24.0px Times; color: #000000}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Times; color: #000000}
+    p.p10 {margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000}
+    p.p11 {margin: 0.0px 0.0px 15.9px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000}
+    p.p12 {margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; min-height: 18.0px}
+    p.p13 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; min-height: 14.0px}
+    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000ee}
+    li.li8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000}
+    span.s1 {font: 11.0px 'Helvetica Neue'; font-kerning: none; background-color: #c0c0c0}
+    span.s2 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; color: #0000ee; background-color: transparent}
+    span.s3 {font-kerning: none}
+    span.s4 {text-decoration: underline ; font-kerning: none}
+    span.s5 {font-kerning: none; background-color: #c0c0c0}
+    span.s6 {font: 12.0px Times; font-kerning: none}
+    span.s7 {text-decoration: underline ; font-kerning: none; color: #0000ee}
+    span.s8 {font-kerning: none; color: #000000}
+    table.t1 {border-style: solid; border-width: 2.0px 2.0px 2.0px 2.0px; border-color: #808080 #808080 #808080 #808080}
+    td.td1 {width: 54.6px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 10.0px 10.0px 10.0px 10.0px}
+    td.td2 {width: 309.6px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 10.0px 10.0px 10.0px 10.0px}
+    td.td3 {width: 54.0px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 10.0px 10.0px 10.0px 10.0px}
+    td.td4 {width: 248.7px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 10.0px 10.0px 10.0px 10.0px}
+    ul.ul1 {list-style-type: disc}
+    ul.ul2 {list-style-type: circle}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">Toggle navigation <a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/index.html#"><span class="s2">Aditya Parameswaran</span></a></span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/index.html#"><span class="s4">Home</span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/index.html#about"><span class="s4">About</span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/index.html#instructions"><span class="s4">Instructions</span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/index.html#schedule"><span class="s4">Schedule</span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/index.html#papers"><span class="s4">Relevant Papers</span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/index.html#project"><span class="s4">Project</span></a></li>
+</ul>
+<p class="p3"><span class="s5">Other Info</span><span class="s6"><span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s3"><b>CS598: Human-in-the-loop Data Management<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s3">The course explores two complementary roles for humans as applied to interactive data analytics: one, where humans are the analysts performing or supervising the analysis; here, the emphasis is on building usable tools for these analysts, and second, where humans are the crowdsourced workers assisting with the computation and analysis; here, the emphasis is on having humans process as little data as possible while gaining maximum benefit.<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s3">Students will read a number of papers: both important landmark papers as well as cutting-edge papers, act as a discussant for a paper at least once, and complete a semester-long implementation project. Familiarity with basic databases, machine learning, and algorithms expected.<span class="Apple-converted-space"> </span></span></p>
+<p class="p7"><span class="s3"><b>News<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li8"><span class="s3">August 24: There will be no classes on 8/28 and 8/30 as Aditya will be attending the VLDB conference</span></li>
+</ul>
+<p class="p4"><span class="s3"><b>Course Significance<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p6"><span class="s3"><b>Crowd-Powered Analytics:</b> An IBM study estimated that 80% of the data recorded every day is unstructured: i.e., it consists of images, videos and text. Fully automated processing of unstructured data is not yet a solved problem. Humans, on the other hand, are very good at understanding, interpreting, and processing unstructured data. How do we use humans to effectively process large volumes of unstructured data?<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s3"><b>Interactive Analytics:</b> A McKinsey Big Data Study estimated that 10s of Millions of new data analysts will be needed by 2015. With so many novice data analysts interacting with data, how do we enable them to quickly get valuable insights? Quickly could mean generating the same results faster, but approximately; it could mean showing them visualizations instead of raw data; it could mean helping the users to ``guess'' the query or insight in mind.<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s3"><b>Grading Policy<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li8"><span class="s3">Class Reviews: 20%<span class="Apple-converted-space"> </span></span></li>
+  <ul class="ul2">
+    <li class="li8"><span class="s3">Due day before class at midnight. Starts on 8th Sep<span class="Apple-converted-space"> </span></span></li>
+    <li class="li8"><span class="s3">Lightly graded; allowed to miss <b>3 (three)</b> in total. Late submissions count towards the <b>3</b><span class="Apple-converted-space"> </span></span></li>
+    <li class="li8"><span class="s3">After 3 misses, you lose 1% of grade per missed review<span class="Apple-converted-space"> </span></span></li>
+  </ul>
+  <li class="li8"><span class="s3">Class Participation: 15%<span class="Apple-converted-space"> </span></span></li>
+  <li class="li8"><span class="s3">Paper Presentation: 15%<span class="Apple-converted-space"> </span></span></li>
+  <ul class="ul2">
+    <li class="li8"><span class="s3">Send us top 5 papers you’d like to present on 1st Sep<span class="Apple-converted-space"> </span></span></li>
+    <li class="li8"><span class="s3">The presentation slides should be mailed to Tarique 48 hrs in advance of your presentation</span></li>
+  </ul>
+  <li class="li8"><span class="s3">Research Project: 50%<span class="Apple-converted-space"> </span></span></li>
+  <ul class="ul2">
+    <li class="li8"><span class="s3">Proposal (23rd Sep) + report + presentation<span class="Apple-converted-space"> </span></span></li>
+  </ul>
+</ul>
+<p class="p4"><span class="s3"><b>Instructions for Submitting Class Reviews<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p6"><span class="s3">You must use the following link to submit class reviews: <a href="https://docs.google.com/forms/d/1eyT1efkD68j2gE3AgVo0dZfwhe7sK4V7p3zkVGqgkcc/viewform"><span class="s7">Link</span></a>.<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s3">Remember to cover the 5 key questions: what is the problem, why is it important, what sets it apart from previous work, what are the key technical ideas, what are the key flaws and open issues, all within 500 words.<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s3">The class reviews must be submitted by <b>midnight the day before class.<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p4"><span class="s3"><b>Instructions for Submitting List of Papers to Present<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p6"><span class="s3">You must use the following link to submit your list of top-5 papers: <a href="https://docs.google.com/forms/d/1DV_ciyAzZY9JGTcZshGncxbRuMI9YUTSPDDn-pcR_5k/viewform"><span class="s7">Link</span></a>.<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s3">The papers you provide can be from the list given below. You are also free to list a paper of your choice, but it must match the themes of the class. This list must be submitted by <b>midnight September 1. </b>.<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s3"><b>Schedule<span class="Apple-converted-space"> </span></b></span></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p9"><span class="s3"><b>Date</b></span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p9"><span class="s3"><b>Paper</b></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p9"><span class="s3"><b>Presenter</b></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p9"><span class="s3"><b>Notes</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">8/28/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p8"><span class="s3">VLDB Conference--No Lecture</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p8"><span class="s3">Aditya</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">8/30/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p8"><span class="s3">VLDB Conference--No Lecture<span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">9/4/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p8"><span class="s3">Holiday- Labor Day<span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">9/6/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/intro.ppt">Introduction to Course Content</a></span><span class="s8"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p8"><span class="s3">Aditya</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">9/11/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/crowdscreen.pptx">CrowdScreen: Algorithms for Filtering Data Using Humans<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p8"><span class="s3">Aditya</span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">9/13/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/sowhowon.pdf">So Who Won: Dynamic Max Discovery with the Crowd<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">9/18/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/sorts-and-joins.pptx">Human-Powered Sorts and Joins<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">9/20/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/turkit.pdf">Turkit: Human Computation Algorithms on Mechanical Turk<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">9/25/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/CrowdDB.pptx">CrowdDB: Answering Queries Using Crowdsourcing<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">9/27/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/Deco%20Presentation.pptx">Deco: Declarative Crowdsourcing<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">10/2/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/potterswheel.pptx">Potter’s Wheel: An Interactive Data Cleaning System<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">10/4/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/wrangler.pptx">Wrangler: interactive visual specification of data transformation scripts<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">10/9/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/profiler.pdf">Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment </a></span><span class="s8">; Mid-term review for projects<span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">10/11/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/rdd.pptx">Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing; Map-Reduce basics<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">10/16/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/dremel.pdf">Dremel: Interactive Analysis Of Web-Scale Datasets; Column Stores basics<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">10/18/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/sparksql.pptx">Spark SQL: Relational Data Processing in Spark; Shark basics<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">10/23/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/blinkdb.pdf">BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">10/25/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/trustme.pptx">Trust Me, I’m Partially Right: Incremental Visualization Lets Analysts Explore Large Datasets Faster<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">10/30/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/polaris.pptx">Polaris: A System for Query, Analysis, and Visualization of Multidimensional Relational Databases<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">11/1/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/seedb.pptx">SeeDB: Automatically Recommending Query Visualizations<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">11/6/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/graphlab.pdf">GraphLab: A New Framework For Parallel Machine Learning<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">11/8/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/graphlab.pdf">MLbase: A Distributed Machine-learning System<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">11/13/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/mad.pdf">MAD Skills: New Analysis Practices for Big Data<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">11/20/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/dbtouch.pdf">dbTouch: Analytics at your Fingertips<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">11/22/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/gesture.pptx">Gestural Query Specification<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">11/27/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p8"><span class="s3">Thanksgiving</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">11/29/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p8"><span class="s3">Thanksgiving</span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">12/4/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/usability.pptx">Making Database Systems Usable<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p8"><span class="s3">12/6/2017</span></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p2"><span class="s4"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/slides/fusion.pptx">Google fusion tables: web-centered data management and collaboration<span class="Apple-converted-space"> </span></a></span></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td3">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+      <td valign="middle" class="td4">
+        <p class="p5"><span class="s3"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p4"><span class="s3"><b>Tentative List of Papers<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p10"><span class="s3"><b>Theme 1: Dealing with Unstructured and Noisy Data<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p11"><span class="s3"><b>Crowd-Powered Systems<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/crowddb.pdf"><span class="s4">CrowdDB: Answering Queries Using Crowdsourcing<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/turkit.pdf"><span class="s4">Turkit: Human Computation Algorithms on Mechanical Turk<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/deco.pdf"><span class="s4">Deco: Declarative Crowdsourcing<span class="Apple-converted-space"> </span></span></a></li>
+</ul>
+<p class="p11"><span class="s3"><b>Crowd-Powered Algorithms</b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/crowdscreen.pdf"><span class="s4">CrowdScreen: Algorithms for Filtering Data Using Humans<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/sorts-and-joins.pdf"><span class="s4">Human-Powered Sorts and Joins<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/enumeration.pdf"><span class="s4">Crowdsourced Enumeration Queries<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/max.pdf"><span class="s4">So Who Won: Dynamic Max Discovery with the Crowd<span class="Apple-converted-space"> </span></span></a></li>
+</ul>
+<p class="p11"><span class="s3"><b>Data Cleaning Systems<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/wrangler.pdf"><span class="s4">Wrangler: interactive visual specification of data transformation scripts<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/profiler.pdf"><span class="s4">Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/arnold.pdf"><span class="s4">Arnold: Declarative Crowd-Machine Data Integration<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/flash-extract.pdf"><span class="s4">FlashExtract: A Framework for Data Extraction by Examples<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/potters-wheel.pdf"><span class="s4">Potter’s Wheel: An Interactive Data Cleaning System<span class="Apple-converted-space"> </span></span></a></li>
+</ul>
+<p class="p10"><span class="s3"><b>Theme 2: Dealing with Huge Data<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p11"><span class="s3"><b>Scalable Data Processing Systems<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/spark_sql.pdf"><span class="s4">Spark SQL: Relational Data Processing in Spark<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/dremel.pdf"><span class="s4">Dremel: Interactive Analysis Of Web-Scale Datasets<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/shark.pdf"><span class="s4">Shark: SQL And Rich Analytics At Scale<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/rdds.pdf"><span class="s4">Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="http://arxiv.org/pdf/1402.6407.pdf"><span class="s4">Better bitmap performance with Roaring bitmaps<span class="Apple-converted-space"> </span></span></a></li>
+</ul>
+<p class="p11"><span class="s3"><b>Approximate Analytics<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/blinkdb.pdf"><span class="s4">BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data.<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/aqua.pdf"><span class="s4">The Aqua Approximate Query Answering System<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/now.pdf"><span class="s4">Scalable Progressive Analytics on Big Data in the Cloud</span></a></li>
+</ul>
+<p class="p11"><span class="s3"><b>Scalable Visualizations<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/immens.pdf"><span class="s4">imMens: Real-time Visual Querying of Big Data</span></a><span class="s8"><span class="Apple-converted-space"> </span></span></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/trust-fisher.pdf"><span class="s4">Trust Me, I’m Partially Right: Incremental Visualization Lets Analysts Explore Large Datasets Faster</span></a><span class="s8"><span class="Apple-converted-space"> </span></span></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/online-aggregation.pdf"><span class="s4">Online Aggregation<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/incremental-fisher.pdf"><span class="s4">Incremental, Approximate Database Queries and Uncertainty for Exploratory Visualization<span class="Apple-converted-space"> </span></span></a></li>
+</ul>
+<p class="p10"><span class="s3"><b>Theme 3: Dealing with Novice Analysts<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p11"><span class="s3"><b>Visual Analytics Systems<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/polaris.pdf"><span class="s4">Polaris: A System for Query, Analysis, and Visualization of Multidimensional Relational Databases<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/seedb.pdf"><span class="s4">SeeDB: Automatically Recommending Query Visualizations<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/viscomplete.pdf"><span class="s4">VisComplete: Automating Suggestions for Visualization Pipelines<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/voyager.pdf"><span class="s4">Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations</span></a></li>
+</ul>
+<p class="p11"><span class="s3"><b>New Interfaces and Usability<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/gesturedb.pdf"><span class="s4">Gestural Query Specification<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/dbtouch.pdf"><span class="s4">dbTouch: Analytics at your Fingertips<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/usability.pdf"><span class="s4">Making Database Systems Usable<span class="Apple-converted-space"> </span></span></a></li>
+</ul>
+<p class="p11"><span class="s3"><b>Autocompletion and Query Refinement<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/snip-suggest.pdf"><span class="s4">Snipsuggest: Context-aware autocompletion for sql<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/qbo.pdf"><span class="s4">Query By Output<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/dataplay.pdf"><span class="s4">DataPlay: Interactive Tweaking and Example-driven Correction of Graphical Database Queries<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/relaxation.pdf"><span class="s4">Machine learning for online query relaxation<span class="Apple-converted-space"> </span></span></a></li>
+</ul>
+<p class="p10"><span class="s3"><b>Theme 4: Dealing with New Data Analytics Scenarios<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p12"><span class="s3"><b></b></span><br></p>
+<p class="p11"><span class="s3"><b>Machine Learning and Graph Processing<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/madskills.pdf"><span class="s4">MAD Skills: New Analysis Practices for Big Data<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/mlbase.pdf"><span class="s4">MLbase: A Distributed Machine-learning System</span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/graphlab-earlier.pdf"><span class="s4">GraphLab: A New Framework For Parallel Machine Learning</span></a></li>
+</ul>
+<p class="p11"><span class="s3"><b>Collaborative Query Processing<span class="Apple-converted-space"> </span></b></span></p>
+<ul class="ul1">
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/fusion-tables.pdf"><span class="s4">Google fusion tables: web-centered data management and collaboration<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/cqms.pdf"><span class="s4">The case for a Collaborative Query Management System<span class="Apple-converted-space"> </span></span></a></li>
+  <li class="li2"><a href="file:///Users/tarique/Documents/workspace-mac/cs598.github.io/papers/collab-vis.pdf"><span class="s4">Design considerations for Collaborative Visual Analytics<span class="Apple-converted-space"> </span></span></a></li>
+</ul>
+<p class="p4"><span class="s3"><b>Implementation Project</b></span></p>
+<p class="p6"><span class="s3">As part of this course, you need to complete a semester-long project. See the instructor for ideas. Alternatively, you are free to look for ideas in your domain of expertise: for instance, if you work in computational journalism, building a new way to browse and manage large collections of textual archives could be a perfectly reasonable project. Either way, you must speak to the instructor to verify that the project is indeed "challenging" enough.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s3"></span><br></p>
+<p class="p5"><span class="s3"></span><br></p>
+<p class="p5"><span class="s3"></span><br></p>
+<p class="p13"><span class="s3"></span><br></p>
+<p class="p6"><span class="s3">© Aditya Parameswaran 2017</span></p>
+</body>
+</html>
