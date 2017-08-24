@@ -1,631 +1,423 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
   <title>Aditya Parameswaran@CS598</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1504.83">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.0px; font: 12.0px Times; color: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000ee}
-    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 13.0px; font: 11.0px 'Helvetica Neue'; color: #000000}
-    p.p4 {margin: 0.0px 0.0px 14.9px 0.0px; line-height: 22.0px; font: 18.0px Times; color: #000000}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; min-height: 14.0px}
-    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000}
-    p.p7 {margin: 0.0px 0.0px 16.1px 0.0px; line-height: 28.0px; font: 24.0px Times; color: #000000}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Times; color: #000000}
-    p.p10 {margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000}
-    p.p11 {margin: 0.0px 0.0px 15.9px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000}
-    p.p12 {margin: 0.0px 0.0px 14.0px 0.0px; line-height: 17.0px; font: 14.0px Times; color: #000000; min-height: 18.0px}
-    p.p13 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; min-height: 14.0px}
-    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #0000ee}
-    li.li8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000}
-    span.s1 {font: 11.0px 'Helvetica Neue'; font-kerning: none; background-color: #c0c0c0}
-    span.s2 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; color: #0000ee; background-color: transparent}
-    span.s3 {font-kerning: none}
-    span.s4 {text-decoration: underline ; font-kerning: none}
-    span.s5 {font-kerning: none; background-color: #c0c0c0}
-    span.s6 {font: 12.0px Times; font-kerning: none}
-    span.s7 {text-decoration: underline ; font-kerning: none; color: #0000ee}
-    span.s8 {font-kerning: none; color: #000000}
-    table.t1 {border-style: solid; border-width: 2.0px 2.0px 2.0px 2.0px; border-color: #808080 #808080 #808080 #808080}
-    td.td1 {width: 54.6px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 10.0px 10.0px 10.0px 10.0px}
-    td.td2 {width: 309.6px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 10.0px 10.0px 10.0px 10.0px}
-    td.td3 {width: 54.0px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 10.0px 10.0px 10.0px 10.0px}
-    td.td4 {width: 248.7px; margin: 0.5px 0.5px 0.5px 0.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #808080 #808080 #808080 #808080; padding: 10.0px 10.0px 10.0px 10.0px}
-    ul.ul1 {list-style-type: disc}
-    ul.ul2 {list-style-type: circle}
-  </style>
+
+  <!-- Bootstrap core CSS -->
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/offcanvas.css" rel="stylesheet">
+  <link href="css/ap.css" rel="stylesheet">
+
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
 </head>
-<body
-<p class="p1"><span class="s1">Toggle navigation <a href="index.html#"><span class="s2">Aditya Parameswaran</span></a></span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="index.html#"><span class="s4">Home</span></a></li>
-  <li class="li2"><a href="index.html#about"><span class="s4">About</span></a></li>
-  <li class="li2"><a href="index.html#instructions"><span class="s4">Instructions</span></a></li>
-  <li class="li2"><a href="index.html#schedule"><span class="s4">Schedule</span></a></li>
-  <li class="li2"><a href="index.html#papers"><span class="s4">Relevant Papers</span></a></li>
-  <li class="li2"><a href="index.html#project"><span class="s4">Project</span></a></li>
-</ul>
-<p class="p3"><span class="s5">Other Info</span><span class="s6"><span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s3"><b>CS598: Human-in-the-loop Data Management<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-<p class="p6"><span class="s3">The course explores two complementary roles for humans as applied to interactive data analytics: one, where humans are the analysts performing or supervising the analysis; here, the emphasis is on building usable tools for these analysts, and second, where humans are the crowdsourced workers assisting with the computation and analysis; here, the emphasis is on having humans process as little data as possible while gaining maximum benefit.<span class="Apple-converted-space"> </span></span></p>
-<p class="p6"><span class="s3">Students will read a number of papers: both important landmark papers as well as cutting-edge papers, act as a discussant for a paper at least once, and complete a semester-long implementation project. Familiarity with basic databases, machine learning, and algorithms expected.<span class="Apple-converted-space"> </span></span></p>
-<p class="p7"><span class="s3"><b>News<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li8"><span class="s3">August 24: There will be no classes on 8/28 and 8/30 as Aditya will be attending the VLDB conference</span></li>
-</ul>
-<p class="p4"><span class="s3"><b>Course Significance<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p6"><span class="s3"><b>Crowd-Powered Analytics:</b> An IBM study estimated that 80% of the data recorded every day is unstructured: i.e., it consists of images, videos and text. Fully automated processing of unstructured data is not yet a solved problem. Humans, on the other hand, are very good at understanding, interpreting, and processing unstructured data. How do we use humans to effectively process large volumes of unstructured data?<span class="Apple-converted-space"> </span></span></p>
-<p class="p6"><span class="s3"><b>Interactive Analytics:</b> A McKinsey Big Data Study estimated that 10s of Millions of new data analysts will be needed by 2015. With so many novice data analysts interacting with data, how do we enable them to quickly get valuable insights? Quickly could mean generating the same results faster, but approximately; it could mean showing them visualizations instead of raw data; it could mean helping the users to ``guess'' the query or insight in mind.<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s3"><b>Grading Policy<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li8"><span class="s3">Class Reviews: 20%<span class="Apple-converted-space"> </span></span></li>
-  <ul class="ul2">
-    <li class="li8"><span class="s3">Due day before class at midnight. Starts on 8th Sep<span class="Apple-converted-space"> </span></span></li>
-    <li class="li8"><span class="s3">Lightly graded; allowed to miss <b>3 (three)</b> in total. Late submissions count towards the <b>3</b><span class="Apple-converted-space"> </span></span></li>
-    <li class="li8"><span class="s3">After 3 misses, you lose 1% of grade per missed review<span class="Apple-converted-space"> </span></span></li>
-  </ul>
-  <li class="li8"><span class="s3">Class Participation: 15%<span class="Apple-converted-space"> </span></span></li>
-  <li class="li8"><span class="s3">Paper Presentation: 15%<span class="Apple-converted-space"> </span></span></li>
-  <ul class="ul2">
-    <li class="li8"><span class="s3">Send us top 5 papers you’d like to present on 1st Sep<span class="Apple-converted-space"> </span></span></li>
-    <li class="li8"><span class="s3">The presentation slides should be mailed to Tarique 48 hrs in advance of your presentation</span></li>
-  </ul>
-  <li class="li8"><span class="s3">Research Project: 50%<span class="Apple-converted-space"> </span></span></li>
-  <ul class="ul2">
-    <li class="li8"><span class="s3">Proposal (23rd Sep) + report + presentation<span class="Apple-converted-space"> </span></span></li>
-  </ul>
-</ul>
-<p class="p4"><span class="s3"><b>Instructions for Submitting Class Reviews<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p6"><span class="s3">You must use the following link to submit class reviews: <a href="https://docs.google.com/forms/d/1eyT1efkD68j2gE3AgVo0dZfwhe7sK4V7p3zkVGqgkcc/viewform"><span class="s7">Link</span></a>.<span class="Apple-converted-space"> </span></span></p>
-<p class="p6"><span class="s3">Remember to cover the 5 key questions: what is the problem, why is it important, what sets it apart from previous work, what are the key technical ideas, what are the key flaws and open issues, all within 500 words.<span class="Apple-converted-space"> </span></span></p>
-<p class="p6"><span class="s3">The class reviews must be submitted by <b>midnight the day before class.<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p4"><span class="s3"><b>Instructions for Submitting List of Papers to Present<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p6"><span class="s3">You must use the following link to submit your list of top-5 papers: <a href="https://docs.google.com/forms/d/1DV_ciyAzZY9JGTcZshGncxbRuMI9YUTSPDDn-pcR_5k/viewform"><span class="s7">Link</span></a>.<span class="Apple-converted-space"> </span></span></p>
-<p class="p6"><span class="s3">The papers you provide can be from the list given below. You are also free to list a paper of your choice, but it must match the themes of the class. This list must be submitted by <b>midnight September 1. </b>.<span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s3"><b>Schedule<span class="Apple-converted-space"> </span></b></span></p>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p9"><span class="s3"><b>Date</b></span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p9"><span class="s3"><b>Paper</b></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p9"><span class="s3"><b>Presenter</b></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p9"><span class="s3"><b>Notes</b></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">8/28/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p8"><span class="s3">VLDB Conference--No Lecture</span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p8"><span class="s3"></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">8/30/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p8"><span class="s3">VLDB Conference--No Lecture<span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">9/4/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p8"><span class="s3">Holiday- Labor Day<span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">9/6/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4">Introduction to Course Content</span><span class="s8"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p8"><span class="s3">Aditya</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">9/11/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p8"><span class="s3"></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">9/13/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">9/18/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">9/20/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">9/25/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">9/27/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">10/2/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">10/4/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"> </span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">10/9/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span><span class="s8"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">10/11/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">10/16/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">10/18/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">10/23/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">10/25/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"> </span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">10/30/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">11/1/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">11/6/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">11/8/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">11/13/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">11/20/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">11/22/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"><span class="Apple-converted-space"> </span></span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">11/27/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p8"><span class="s3">Thanksgiving</span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">11/29/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p8"><span class="s3">Thanksgiving</span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">12/4/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p8"><span class="s3">12/6/2017</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s4"></span></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td3">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p5"><span class="s3"></span><br></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p class="p4"><span class="s3"><b>Tentative List of Papers<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p10"><span class="s3"><b>Theme 1: Dealing with Unstructured and Noisy Data<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p11"><span class="s3"><b>Crowd-Powered Systems<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/crowddb.pdf"><span class="s4">CrowdDB: Answering Queries Using Crowdsourcing<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/turkit.pdf"><span class="s4">Turkit: Human Computation Algorithms on Mechanical Turk<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/deco.pdf"><span class="s4">Deco: Declarative Crowdsourcing<span class="Apple-converted-space"> </span></span></a></li>
-</ul>
-<p class="p11"><span class="s3"><b>Crowd-Powered Algorithms</b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/crowdscreen.pdf"><span class="s4">CrowdScreen: Algorithms for Filtering Data Using Humans<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/sorts-and-joins.pdf"><span class="s4">Human-Powered Sorts and Joins<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/enumeration.pdf"><span class="s4">Crowdsourced Enumeration Queries<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/max.pdf"><span class="s4">So Who Won: Dynamic Max Discovery with the Crowd<span class="Apple-converted-space"> </span></span></a></li>
-</ul>
-<p class="p11"><span class="s3"><b>Data Cleaning Systems<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/wrangler.pdf"><span class="s4">Wrangler: interactive visual specification of data transformation scripts<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/profiler.pdf"><span class="s4">Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/arnold.pdf"><span class="s4">Arnold: Declarative Crowd-Machine Data Integration<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/flash-extract.pdf"><span class="s4">FlashExtract: A Framework for Data Extraction by Examples<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/potters-wheel.pdf"><span class="s4">Potter’s Wheel: An Interactive Data Cleaning System<span class="Apple-converted-space"> </span></span></a></li>
-</ul>
-<p class="p10"><span class="s3"><b>Theme 2: Dealing with Huge Data<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p11"><span class="s3"><b>Scalable Data Processing Systems<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/spark_sql.pdf"><span class="s4">Spark SQL: Relational Data Processing in Spark<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/dremel.pdf"><span class="s4">Dremel: Interactive Analysis Of Web-Scale Datasets<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/shark.pdf"><span class="s4">Shark: SQL And Rich Analytics At Scale<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/rdds.pdf"><span class="s4">Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="http://arxiv.org/pdf/1402.6407.pdf"><span class="s4">Better bitmap performance with Roaring bitmaps<span class="Apple-converted-space"> </span></span></a></li>
-</ul>
-<p class="p11"><span class="s3"><b>Approximate Analytics<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/blinkdb.pdf"><span class="s4">BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data.<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/aqua.pdf"><span class="s4">The Aqua Approximate Query Answering System<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/now.pdf"><span class="s4">Scalable Progressive Analytics on Big Data in the Cloud</span></a></li>
-</ul>
-<p class="p11"><span class="s3"><b>Scalable Visualizations<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/immens.pdf"><span class="s4">imMens: Real-time Visual Querying of Big Data</span></a><span class="s8"><span class="Apple-converted-space"> </span></span></li>
-  <li class="li2"><a href="papers/trust-fisher.pdf"><span class="s4">Trust Me, I’m Partially Right: Incremental Visualization Lets Analysts Explore Large Datasets Faster</span></a><span class="s8"><span class="Apple-converted-space"> </span></span></li>
-  <li class="li2"><a href="papers/online-aggregation.pdf"><span class="s4">Online Aggregation<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/incremental-fisher.pdf"><span class="s4">Incremental, Approximate Database Queries and Uncertainty for Exploratory Visualization<span class="Apple-converted-space"> </span></span></a></li>
-</ul>
-<p class="p10"><span class="s3"><b>Theme 3: Dealing with Novice Analysts<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p11"><span class="s3"><b>Visual Analytics Systems<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/polaris.pdf"><span class="s4">Polaris: A System for Query, Analysis, and Visualization of Multidimensional Relational Databases<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/seedb.pdf"><span class="s4">SeeDB: Automatically Recommending Query Visualizations<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/viscomplete.pdf"><span class="s4">VisComplete: Automating Suggestions for Visualization Pipelines<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/voyager.pdf"><span class="s4">Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations</span></a></li>
-</ul>
-<p class="p11"><span class="s3"><b>New Interfaces and Usability<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/gesturedb.pdf"><span class="s4">Gestural Query Specification<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/dbtouch.pdf"><span class="s4">dbTouch: Analytics at your Fingertips<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/usability.pdf"><span class="s4">Making Database Systems Usable<span class="Apple-converted-space"> </span></span></a></li>
-</ul>
-<p class="p11"><span class="s3"><b>Autocompletion and Query Refinement<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/snip-suggest.pdf"><span class="s4">Snipsuggest: Context-aware autocompletion for sql<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/qbo.pdf"><span class="s4">Query By Output<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/dataplay.pdf"><span class="s4">DataPlay: Interactive Tweaking and Example-driven Correction of Graphical Database Queries<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/relaxation.pdf"><span class="s4">Machine learning for online query relaxation<span class="Apple-converted-space"> </span></span></a></li>
-</ul>
-<p class="p10"><span class="s3"><b>Theme 4: Dealing with New Data Analytics Scenarios<span class="Apple-converted-space"> </span></b></span></p>
-<p class="p12"><span class="s3"><b></b></span><br></p>
-<p class="p11"><span class="s3"><b>Machine Learning and Graph Processing<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/madskills.pdf"><span class="s4">MAD Skills: New Analysis Practices for Big Data<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/mlbase.pdf"><span class="s4">MLbase: A Distributed Machine-learning System</span></a></li>
-  <li class="li2"><a href="papers/graphlab-earlier.pdf"><span class="s4">GraphLab: A New Framework For Parallel Machine Learning</span></a></li>
-</ul>
-<p class="p11"><span class="s3"><b>Collaborative Query Processing<span class="Apple-converted-space"> </span></b></span></p>
-<ul class="ul1">
-  <li class="li2"><a href="papers/fusion-tables.pdf"><span class="s4">Google fusion tables: web-centered data management and collaboration<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/cqms.pdf"><span class="s4">The case for a Collaborative Query Management System<span class="Apple-converted-space"> </span></span></a></li>
-  <li class="li2"><a href="papers/collab-vis.pdf"><span class="s4">Design considerations for Collaborative Visual Analytics<span class="Apple-converted-space"> </span></span></a></li>
-</ul>
-<p class="p4"><span class="s3"><b>Implementation Project</b></span></p>
-<p class="p6"><span class="s3">As part of this course, you need to complete a semester-long project. See the instructor for ideas. Alternatively, you are free to look for ideas in your domain of expertise: for instance, if you work in computational journalism, building a new way to browse and manage large collections of textual archives could be a perfectly reasonable project. Either way, you must speak to the instructor to verify that the project is indeed "challenging" enough.<span class="Apple-converted-space"> </span></span></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p5"><span class="s3"></span><br></p>
-<p class="p13"><span class="s3"></span><br></p>
-<p class="p6"><span class="s3">© Aditya Parameswaran 2017</span></p>
-</body>
-</html>
+
+
+<body>
+
+  <script type="text/javascript" src="papers.json"></script>    
+
+  <script type="text/javascript" src="display_papers.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+  <script src="js/bootstrap.js"></script>
+
+  <script> 
+  $(function(){
+    $("#sidebar").load("sidebar.html"); 
+  });
+  $(document).ready( function() {
+  $('.dropdown-toggle').dropdown();
+  });
+  </script> 
+  
+
+
+
+
+  
+
+   <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html#">Aditya Parameswaran</a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html#">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#instructions">Instructions</a></li>
+              <li><a href="index.html#schedule">Schedule</a></li>
+              <li><a href="index.html#papers">Relevant Papers</a></li>
+              <li><a href="index.html#project">Project</a></li>
+              
+              <!-- 
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                  Research Themes <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                <li><a href="visual.html">Visual Analytics</a></li>
+                <li><a href="scoop.html">Crowd-Powered Analytics</a></li>
+                <li><a href="query.html">Interactive Analytics</a></li>
+                <li><a href="web.html">Info Extraction and Integration</a></li>
+                <li><a href="recom.html">Recommender Systems</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Publications <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                <li><a href="topic.html">By Topic</a></li>
+                <li><a href="date.html">By Date</a></li>
+                <li class="divider"></li>
+                <li><a href="index.html#recent">Recent</a></li>
+                </ul>
+              </li> -->
+
+            </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row row-offcanvas row-offcanvas-right">
+
+      <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Other Info</button>
+          </p>
+          <div class="jumbotron">
+            <h2>CS598: Human-in-the-loop Data Management </h2>
+            
+            <div class="row">
+              <div class="col-md-4">
+               <img src="images/courseimage.png" class="img-responsive img-rounded" style="margin-bottom: -25px;">  
+             </div> <!-- /span2 -->
+             <div class="col-md-8">
+              <p>
+                The course explores two complementary roles for humans as applied to interactive data analytics: one, where humans are the analysts performing or supervising the analysis; here, the emphasis is on building usable tools for these analysts, and second, where humans are the crowdsourced workers assisting with the computation and analysis; here, the emphasis is on having humans process as little data as possible while gaining maximum benefit. 
+
+              </p>
+            </div>
+             <p>
+                Students will read a number of papers: both important landmark papers as well as cutting-edge papers, act as a discussant for a paper at least once, and complete a semester-long implementation project. Familiarity with basic databases, machine learning, and algorithms expected.
+              </p>
+          </div>
+      </div>
+
+      <a name="news"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h1> News </h1>
+          <ul>
+	  <li> August 25: There will be no classes on 8/28 and 8/30 as Aditya will be attending the VLDB conference.</li>  
+          </ul>
+        </div>
+      </div>
+
+<!--
+      <a name="bio"></a> 
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Biographical Sketch </h2>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Aditya Parameswaran is an Assistant Professor in Computer Science at the University of Illinois (UIUC). He is currently spending the year visiting MIT CSAIL and Microsoft Research NE, after completing his Ph.D. from <a href="http://www.stanford.edu">Stanford University</a> in Sept. 2013, advised by Prof. <a href="http://cs.stanford.edu/~hector">Hector Garcia-Molina</a>. He is broadly interested in data analytics, with research results in human computation, visual analytics, information extraction and integration, and recommender systems. <br/>
+
+            Aditya is a recipient of the Arthur Samuel award for the best dissertation in Computer Science at Stanford (2013), the SIGMOD Jim Gray dissertation award (2014), the Key Scientific Challenges Award from Yahoo! Research (2010), two best-of-conference citations (VLDB 2010 and KDD 2012), the Terry Groswith graduate fellowship at Stanford (2007), and the Gold Medal in Computer Science at IIT Bombay (2007). 
+          </p>
+        </div>
+      </div>
+-->
+      <a name="bio"></a> 
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Course Significance </h2>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            <b>Crowd-Powered Analytics:</b> An IBM study estimated that 80% of the data recorded every day is unstructured: i.e., it consists of images, videos and text. Fully automated processing of unstructured data is not yet a solved problem. Humans, on the other hand, are very good at understanding, interpreting, and processing unstructured data. How do we use humans to effectively process large volumes of unstructured data?
+          </p>    
+          <p>
+            <b>Interactive Analytics:</b> A McKinsey Big Data Study estimated that 10s of Millions of new data analysts will be needed by 2017. With so many novice data analysts interacting with data, how do we enable them to quickly get valuable insights? Quickly could mean generating the same results faster, but approximately; it could mean showing them visualizations instead of raw data; it could mean helping the users to ``guess'' the query or insight in mind. 
+
+
+          </p>
+        </div>
+      </div>
+   
+      <a name="instructions"></a>
+      <a name="Grading"></a>
+      <div class="row">
+         <div class="col-md-12">
+	         <h2> Grading Policy  </h2>
+	           <ul>
+              <li> Class Reviews: 20% </li>
+	             <ul>
+	               <li> Due day before class at midnight. Starts on 13th Sep 
+                  <li> Lightly graded; allowed to miss <b>3 (three)</b> in total. Late submissions count towards the <b>3</b>
+                  <li> After 3 misses, you lose 1% of grade per missed review </li>
+	             </ul>	
+	            <li> Class Participation: 15% </li>
+		          <li> Paper Presentation: 15%  </li>
+	             <ul>
+	               <li> Send us top 5 papers you’d like to present on 1st Sep </li>
+	               <li> The presentation slides should be mailed to Tarique 48 hrs in advance of your presentation</li>
+	             </ul>
+ 	            <li> Research Project: 50% </li>
+              <ul>
+	             <li> Proposal (23rd Sep) + report + presentation </li> 	 
+              </ul>
+	       </div>	
+      </div>
+
+
+
+
+      <a name="class-review-instructions"></a>
+      <div class="row">
+         <div class="col-md-12">
+          <h2> Instructions for Submitting Class Reviews </h2>
+          <p>
+            You must use the following link to submit class reviews: <a href="https://docs.google.com/forms/d/1eyT1efkD68j2gE3AgVo0dZfwhe7sK4V7p3zkVGqgkcc/viewform">Link</a>.
+          </p>
+          <p> Remember to cover the 5 key questions: what is the problem, why is it important, what sets it apart from previous work, what are the key technical ideas, what are the key flaws and open issues, all within 500 words.
+          </p>
+          <p> The class reviews must be submitted by <b>midnight the day before class. </b></p>
+        </div>
+      </div>
+
+      <a name="paper-presentation-list"></a>
+      <div class="row">
+         <div class="col-md-12">
+          <h2> Instructions for Submitting List of Papers to Present </h2>
+          <p>
+            You must use the following link to submit your list of top-5 papers: <a href="https://docs.google.com/forms/d/1DV_ciyAzZY9JGTcZshGncxbRuMI9YUTSPDDn-pcR_5k/viewform">Link</a>.
+          </p>
+          <p> The papers you provide can be from the list given below. You are also free to list a paper of your choice, but it must match the themes of the class. This list must be submitted by <b> midnight September 1. </b>. 
+          </p>
+          </div>
+      </div>
+
+
+      <a name="schedule"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Schedule </h2>
+          <table border="2" cellpadding="2">
+            <thead><tr><th style="padding:10px">Date</th> <th style="padding:10px">Paper</th> <th style="padding:10px">Presenter</th> <th style="padding:10px">Notes</th></tr></thead>
+            <tbody>
+            <td style="padding:10px">8/28/2017</td><td style="padding:10px"> VLDB Conference--No Lecture </td><td style="padding:10px">Aditya</td><td style="padding:10px">  </td></tr><tr>
+            <td style="padding:10px">8/30/2017</td><td style="padding:10px"> VLDB Conference--No Lecture </td><td style="padding:10px">Aditya </td><td style="padding:10px"></td></tr><tr>
+            <td style="padding:10px">9/4/2017</td><td style="padding:10px"> Holiday- Labor Day </td><td style="padding:10px"> </td><td style="padding:10px">   </td></tr><tr>
+            <td style="padding:10px">9/6/2017</td><td style="padding:10px"> Introduction to course content </td><td style="padding:10px">Aditya</td><td style="padding:10px">   </td></tr><tr>
+            <td style="padding:10px">9/11/2017</td><td style="padding:10px">  </td><td style="padding:10px"> </td><td style="padding:10px">  </td></tr><tr>
+            <td style="padding:10px">9/13/2017</td><td style="padding:10px"> </td> <td style="padding:10px">   </td><td style="padding:10px">First time for Class Review- Send it by midnight the day before; Student Presentations Start  </td></tr><tr>
+            <td style="padding:10px">9/18/2017</td><td style="padding:10px">  </td><td style="padding:10px">            </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">9/20/2017</td><td style="padding:10px">  </td><td style="padding:10px">            </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">9/25/2017</td><td style="padding:10px"> </td><td style="padding:10px">       </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">9/27/2017</td><td style="padding:10px"> </td><td style="padding:10px">           </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">10/2/2017</td><td style="padding:10px"> </td><td style="padding:10px">              </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">10/4/2017</td><td style="padding:10px">       </td><td style="padding:10px">        </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">10/9/2017</td><td style="padding:10px">  </td><td style="padding:10px">                </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">10/11/2017</td><td style="padding:10px"></td><td style="padding:10px">             </td><td style="padding:10px">   </td></tr><tr>
+            <td style="padding:10px">10/16/2017</td><td style="padding:10px">   </td><td style="padding:10px">     </td><td style="padding:10px"> </td></tr><tr>
+            
+           <td style="padding:10px">10/18/2017</td><td style="padding:10px">   </td><td style="padding:10px">                          </td><td style="padding:10px">  </td></tr><tr>
+<td style="padding:10px">10/19/2017</td><td style="padding:10px">  </td><td style="padding:10px">           </td><td style="padding:10px">  </td></tr><tr>
+
+            <td style="padding:10px">10/23/2017</td><td style="padding:10px">       </td><td style="padding:10px">                    </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">10/25/2017</td><td style="padding:10px"> </td><td style="padding:10px">   </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">10/30/2017</td><td style="padding:10px">  </td><td style="padding:10px">          </td><td style="padding:10px">  </td> </tr><tr>
+            <td style="padding:10px">11/1/2017</td><td style="padding:10px">    </td><td style="padding:10px">           </td><td style="padding:10px">  </td></tr><tr>
+            <td style="padding:10px">11/6/2017</td><td style="padding:10px">             </td><td style="padding:10px">           </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">11/8/2017</td><td style="padding:10px">            </td><td style="padding:10px">          </td><td style="padding:10px">  </td></tr><tr>  
+            <td style="padding:10px">11/13/2017</td><td style="padding:10px">          </td><td style="padding:10px">        </td><td style="padding:10px">  </td></tr><tr>
+            <td style="padding:10px">11/15/2017</td><td style="padding:10px">           </td><td style="padding:10px">    </td><td style="padding:10px">  </td></tr><tr>
+            <td style="padding:10px">11/20/2017</td><td style="padding:10px">   </td><td style="padding:10px">          </td><td style="padding:10px">  </td></tr><tr>
+            <td style="padding:10px">11/22/2017</td><td style="padding:10px"> </td><td style="padding:10px"> </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">11/27/2017</td><td style="padding:10px">Thanksgiving</td><td style="padding:10px"> </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">12/29/2017</td><td style="padding:10px">Thanksgiving </td><td style="padding:10px">        </td><td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">12/4/2017</td><td style="padding:10px"> </td><td style="padding:10px"> </td> <td style="padding:10px"> </td></tr><tr>
+            <td style="padding:10px">12/6/2017</td><td style="padding:10px"> </td><td style="padding:10px"> </td><td style="padding:10px">  </td></tr>
+          </tbody></table>
+
+          </div>
+      </div>
+     
+
+      <a name="papers"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Tentative List of Papers </h2>
+          <h3> Theme 1: Dealing with Unstructured and Noisy Data </h3>
+          <h4> Crowd-Powered Systems </h4>
+          <ul>   
+            <li><a href="papers/crowddb.pdf"> CrowdDB: Answering Queries Using Crowdsourcing </a></li>
+            <li><a href="papers/turkit.pdf"> Turkit: Human Computation Algorithms on Mechanical Turk  </a></li>
+            <li><a href="papers/deco.pdf"> Deco: Declarative Crowdsourcing </a></li>
+          </ul>
+          <h4> Crowd-Powered Algorithms</h4>
+          <ul>
+            <li><a href="papers/crowdscreen.pdf"> CrowdScreen: Algorithms for Filtering Data Using Humans </a></li>
+            <li><a href="papers/sorts-and-joins.pdf"> Human-Powered Sorts and Joins </a></li>
+            <li><a href="papers/enumeration.pdf"> Crowdsourced Enumeration Queries </a></li>
+            <li><a href="papers/max.pdf"> So Who Won: Dynamic Max Discovery with the Crowd </a></li>
+          </ul>
+          <h4> Data Cleaning Systems </h4>
+          <ul>
+            <li><a href="papers/wrangler.pdf"> Wrangler: interactive visual specification of data transformation scripts </a></li>
+            <li><a href="papers/profiler.pdf"> Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment </a> </li>
+            <li><a href="papers/arnold.pdf"> Arnold: Declarative Crowd-Machine Data Integration </a></li>
+            <li><a href="papers/flash-extract.pdf"> FlashExtract: A Framework for Data Extraction by Examples </a> </li>
+            <li><a href="papers/potters-wheel.pdf"> Potter’s Wheel: An Interactive Data Cleaning System </a></li>
+          </ul>
+          <h3> Theme 2: Dealing with Huge Data </h3>
+          <h4> Scalable Data Processing Systems </h4>
+          <ul>
+	    <li><a href="papers/spark_sql.pdf"> Spark SQL: Relational Data Processing in Spark </a></li> 	
+            <li><a href="papers/dremel.pdf">  Dremel: Interactive Analysis Of Web-Scale Datasets </a></li>
+            <li><a href="papers/shark.pdf">  Shark: SQL And Rich Analytics At Scale </a> </li>
+            <li><a href="papers/rdds.pdf"> Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing </a></li>
+	   <li><a href="http://arxiv.org/pdf/1402.6407.pdf"> Better bitmap performance with Roaring bitmaps </a></li>
+          </ul>
+          <h4> Approximate Analytics </h4>
+          <ul>
+            <li><a href="papers/blinkdb.pdf"> BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data. </a></li>
+            <li><a href="papers/aqua.pdf"> The Aqua Approximate Query Answering System </a></li>
+            <li><a href="papers/now.pdf">Scalable Progressive Analytics on Big Data in the Cloud</a></li>
+          </ul>
+          <h4> Scalable Visualizations </h4>
+          <ul>
+            <li><a href="papers/immens.pdf">imMens: Real-time Visual Querying of Big Data</a> </li>
+            <li><a href="papers/trust-fisher.pdf"> Trust Me, I’m Partially Right: Incremental Visualization Lets Analysts Explore Large Datasets Faster</a> </li>
+          <!--  <li> Generating Rapid Visualizations with Guarantees. </li> -->
+            <li><a href="papers/online-aggregation.pdf"> Online Aggregation </a></li>
+            <li><a href="papers/incremental-fisher.pdf"> Incremental, Approximate Database Queries and Uncertainty for Exploratory Visualization </a></li>
+          </ul>
+          <h3> Theme 3: Dealing with Novice Analysts </h3>
+          <h4> Visual Analytics Systems </h4>
+          <ul>
+            <li><a href="papers/polaris.pdf"> Polaris: A System for Query, Analysis, and Visualization of Multidimensional Relational Databases </a></li>
+            <li><a href="papers/seedb.pdf"> SeeDB: Automatically Recommending Query Visualizations </a></li>
+            <li><a href="papers/viscomplete.pdf"> VisComplete: Automating Suggestions for Visualization Pipelines </a></li>
+	          <li><a href="papers/voyager.pdf"> Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations</a></li>	
+          </ul>
+          <h4> New Interfaces and Usability </h4>
+          <ul>
+            <li><a href="papers/gesturedb.pdf"> Gestural Query Specification </a></li>
+            <li><a href="papers/dbtouch.pdf"> dbTouch: Analytics at your Fingertips </a></li>
+            <li><a href="papers/usability.pdf"> Making Database Systems Usable </a></li>
+     <!--       <li> Interactive analysis of big data </li> -->
+          </ul>
+          <h4> Autocompletion and  Query Refinement </h4>
+          <ul>
+            <li> <a href="papers/snip-suggest.pdf"> Snipsuggest: Context-aware autocompletion for sql </a></li>
+            <li> <a href="papers/qbo.pdf"> Query By Output </a></li>
+            <li> <a href="papers/dataplay.pdf"> DataPlay: Interactive Tweaking and Example-driven Correction of Graphical Database Queries </a> </li>
+            <li> <a href="papers/relaxation.pdf"> Machine learning for online query relaxation </a></li>
+          </ul>
+          <h3> Theme 4: Dealing with New Data Analytics Scenarios <h3>
+          <h4> Machine Learning and Graph Processing </h4>
+          <ul>
+            <li><a href="papers/madskills.pdf"> MAD Skills: New Analysis Practices for Big Data </a></li>
+            <li><a href="papers/mlbase.pdf">MLbase: A Distributed Machine-learning System</a></li>
+            <li><a href="papers/graphlab-earlier.pdf">GraphLab: A New Framework For Parallel Machine Learning</a></li>
+          </ul>
+          <h4> Collaborative Query Processing </h4>
+          <ul>
+            <li><a href="papers/fusion-tables.pdf"> Google fusion tables: web-centered data management and collaboration </a></li>
+            <li><a href="papers/cqms.pdf"> The case for a Collaborative Query Management System </a></li>
+            <li><a href="papers/collab-vis.pdf"> Design considerations for Collaborative Visual Analytics </a> </li>
+          </ul>
+        </div>
+      </div>
+    
+      <a name="project"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Implementation Project</h2>
+          <p> As part of this course, you need to complete a semester-long project. See the instructor for ideas. Alternatively, you are free to look for ideas in your domain of expertise: for instance, if you work in computational journalism, building a new way to browse and manage large collections of textual archives could be a perfectly reasonable project. Either way, you must speak to the instructor to verify that the project is indeed "challenging" enough.
+          </p>
+          <!--<ol>
+            <li> <b> Build an auto-cleaning database: </b> A database that, based on user input, automatically "predicts" missing values in a column using a standard machine learning technique on the remaining columns. A more advanced version of this database can pick the most suited machine learning algorithm that best predicts missing values. </li>
+            <li> <b> A graph visualization system: </b> Most graph visualization tools end up displaying a giant mess of links. Build an interactive visualization tool that automatically clusters or samples nodes and edges so that the user is not overwhelmed with the visualization, but the user can interact by zooming in/out in order to get a better sense for the data. Design scalable techniques such that these interactions are seamless. </li>
+            <li> <b> Graph processing language: </b> Most graph processing systems end up focusing on simple algorithms (shortest paths, pagerank) that are not really used by real graph analysts. Study http://snap.stanford.edu/snap/description.html to identify common patterns of accesses made by different network algorithms, and design a wrapper over a relational or graph database that can supports a large fraction of these operations. </li>
+            <li> <b> Correlation-Aware query processing: </b> </li>
+            <li> <b> </li>
+          </ol>
+        -->
+
+
+        </div>
+      </div>
+
+  </div>
+
+     
+
+      <br/><br/>
+        <div id="sidebar"></div>
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Aditya Parameswaran 2014</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+  </body>
+  </html>
+
+
